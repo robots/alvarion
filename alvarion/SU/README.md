@@ -110,7 +110,7 @@ unknown:
      
 111101000000000000000
 
-####Write to lmx2326:
+#### Write to lmx2326:
 11110001 00 000000000000010010010
 
 writes to pll then strobes LE
@@ -170,7 +170,7 @@ strobes LE, writes data
        0010 0 0000000011011 10000 01
 
 
-write to TXPLL (lmx1601):
+#### write to TXPLL (lmx1601):
 
 111100000 1000 101100000001010010
 
@@ -194,7 +194,7 @@ main A = 8
 main B = 64
 
 
-write to RXPLL (lmx1601):
+#### write to RXPLL (lmx1601):
 
 111100001 0000 101100000001010010
 
