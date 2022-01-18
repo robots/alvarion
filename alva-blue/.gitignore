@@ -1,0 +1,15 @@
+openocd/*
+stm32flash/stm32flash
+stm32flash/parsers/parsers.a
+eth_main/crap/
+bin/*
+/*/FLASH_RUN/
+various/*
+toolchain/*
+stats/*
+pkg/*
+*.o
+*.pyc
+*.lst
+*.d
+.hg

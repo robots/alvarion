@@ -1,0 +1,52 @@
+#ifndef COMMANDS_h_
+#define COMMANDS_h_
+
+//params - bitmask
+enum {
+	PARAM_BEEP_OVF = 1,
+	PARAM_ERROR_REPORT = 2,
+};
+
+// commands
+enum {
+	CMD_ERROR = '&',
+	CMD_GETID = 'a',
+	CMD_RESETDEVICE,
+	CMD_RESETDEVICEDFU,
+
+	CMD_SETPARAMS,
+	CMD_GETPARAMS,
+
+	CMD_TUNEMAIN,
+	CMD_TUNE_RXIF,
+	CMD_TUNE_TXIF,
+	CMD_TUNE_AUX,
+
+	CMD_RX,
+	CMD_TX,
+
+	CMD_FEAT,
+
+	CMD_SWITCH,
+	CMD_RXPREAMP,
+	CMD_TRANSMIT,
+
+	CMD_LED,
+
+	CMD_REINIT,
+
+};
+
+// errors
+enum {
+	ERROR_OK = 0,
+	ERROR_INTERNAL,
+	ERROR_FIFO_OVF,
+	ERROR_BAD_ARG,
+	ERROR_BAD_PARAM,
+	ERROR_BAD_STATE
+};
+
+
+#endif
+
