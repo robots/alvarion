@@ -6,6 +6,31 @@ la  contain traces of control signal from internal unit to the transverter. Capt
 la2 is python program to gather different bitstreams from the captured data. Used to extract all possible commands.
 
 
+## PLL ranges
+|        |           |
+|--------|-----------|
+|MAIN pll|1849 - 2117|
+|+2.2pF  |1769 - 2054|
+|RX pll  |1027 - 1176|
+|TX pll  | 916 - 1076|
+
+
+
+IF 440 Mhz CW (unit present), signal at 437.907Mhz
+
+## IF calculations for HAM band
+
+3400 - 1575(rx if filter) = 1825
+
+3400 - 1472(tx if filter) = 1928
+
+
+1575 - 440(if) = 1135
+
+1472 - 440(if) = 1032
+
+
+# Below is Reverse engineering work
 
 ## pinout of the 20x2 pin connector near CPLD
 
@@ -56,30 +81,6 @@ la2 is python program to gather different bitstreams from the captured data. Use
 |18 |                                |
 |19 |                                |
 |20 |                                |
-
-## PLL ranges
-|        |           |
-|--------|-----------|
-|MAIN pll|1849 - 2117|
-|+2.2pF  |1769 - 2054|
-|RX pll  |1027 - 1176|
-|TX pll  | 916 - 1076|
-
-
-
-IF 440 Mhz CW (unit present), signal at 437.907Mhz
-
-## IF calculations
-
-3400 - 1575(rx if filter) = 1825
-
-3400 - 1472(tx if filter) = 1928
-
-
-1575 - 440(if) = 1135
-
-1472 - 440(if) = 1032
-
 
 
 ## watchdog:
